@@ -1,0 +1,29 @@
+clase mayor tienda
+    atributo contArreglos
+    atributo contFlores
+    atributo contFloresNatMed
+    metodo procesarArreglo
+        acumular arreglos
+                 flores
+                 flores naturales medianas
+    metodo calcularPorciento
+        return contFloresNatMed/contFlores*100
+
+clase menor padre arreglo
+    atributo codigo
+    atributo envase
+        1.Pequeño 2.mediano 3.grande
+    atributo costo 
+    
+clase menor hija flores
+    atributo tipo
+        A.artificial N.natural
+    metodo descuento
+        if tipo == A : -10%
+        else tipo == B : +8% 
+        
+clase menor hija frutas
+    atributo complemento
+        0.nada 1.chocolate 2.vino
+    metodo descuento
+        if complemento >= 1 : 15%
