@@ -1,12 +1,13 @@
-import Cl_mFlores from "./Cl_mFlores"
+import Cl_mFlores from "./Cl_mFlores.js"
 
 export default class Cl_mTienda{
     constructor(){
-        this.contArreglos == 0
-        this.contFlores == 0
-        this.contFloresNatMed == 0
+        this.contArreglos = +0
+        this.contFlores = +0
+        this.contFloresNatMed = +0
+        this.acumVendido = +0
     }
-    procesarArreglo(arreglo){
+    procesarVenta(arreglo){
         this.contArreglos++
         if(arreglo instanceof Cl_mFlores){
             this.contFlores++
@@ -14,6 +15,7 @@ export default class Cl_mTienda{
                 this.contFloresNatMed++
             }
         }
+        this.acumVendido += arreglo.costo+arreglo.descuento()
     }
 
     calcularPorciento(){

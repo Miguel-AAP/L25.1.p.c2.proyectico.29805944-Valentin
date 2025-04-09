@@ -1,6 +1,7 @@
 export default class Cl_vArreglo{
     constructor(){
-        this.inCodigo = document.getElementById("arregloForm_incodigo")
+        this.arregloSeccion = document.getElementById("arregloForm")
+        this.inCodigo = document.getElementById("arregloForm_inCodigo")
         this.inEnvase = document.getElementById("arregloForm_inEnvase")
         this.inCosto = document.getElementById("arregloForm_inCosto")
         this.inTipo = document.getElementById("arregloForm_inTipo")
@@ -26,5 +27,9 @@ export default class Cl_vArreglo{
 
     get aditivo(){
         return this.inAditivo.value 
+    }
+
+    ocultar(){
+        this.arregloSeccion.hidden = !this.arregloSeccion.hidden
     }
 }

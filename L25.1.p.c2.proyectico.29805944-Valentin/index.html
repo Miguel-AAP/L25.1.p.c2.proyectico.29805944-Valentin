@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
     <section id="mainForm">
-        <table id="mainForm_Tabla">
+        <table id="mainForm_tabla">
             <tr>
                 <td>codigo</td>
                 <td>envase</td>
@@ -17,6 +18,7 @@
             </tr>
         </table>
         <button id="mainForm_button"> añadir venta</button>
+        <div id="salida"></div>
     </section>
     <section id="arregloForm">
         <input id="arregloForm_inCodigo" placeholder="codigo"></input>
@@ -25,9 +27,10 @@
         <input id="arregloForm_inTipo" placeholder="tipo"></input>
         <input id="arregloForm_inAditivo" placeholder="aditivo"></input>
         <button id="arregloForm_button">aceptar</button>
-    </section>
-    <section id="salida">
-        
-    </section>
+
 </body>
+<script type="module">
+    import Cl_index from "./js/Cl_index.js"
+    new Cl_index()
+</script>
 </html>
